@@ -1,7 +1,7 @@
 import { makeBindingClass, Options } from 'graphql-binding'
 import { GraphQLResolveInfo, GraphQLSchema } from 'graphql'
 import { IResolvers } from 'graphql-tools/dist/Interfaces'
-import * as schema from './binding-source'
+import { default as schema } from './binding-source' // this line has been modified, was generated as "import * as schema"
 
 export interface Query {
   hello: <T = String | null>(
@@ -52,7 +52,7 @@ export interface Binding {
 export interface BindingConstructor<T> {
   new (...args): T
 }
-console.log(schema)
+
 export const Binding = makeBindingClass<BindingConstructor<Binding>>({ schema })
 
 /**

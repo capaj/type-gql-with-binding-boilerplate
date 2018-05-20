@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev index.ts",
+    "bingen":
+      "npx graphql-binding --language typescript --input binding-source.js --outputBinding api-binding.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "apollo-server-koa": "^1.3.6",
     "dotenv": "^5.0.1",
@@ -24,7 +26,7 @@
   "devDependencies": {
     "@types/graphql": "^0.13.1",
     "apollo-link-http": "^1.5.4",
-    "graphql-binding": "^1.4.0-beta.33",
+    "graphql-binding": "^2.0.0",
     "node-fetch": "^2.1.2",
     "ts-node": "^6.0.3",
     "ts-node-dev": "^1.0.0-pre.22",
