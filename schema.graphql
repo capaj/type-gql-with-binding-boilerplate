@@ -1,0 +1,14 @@
+type Mutation {
+  createProduct(name: String!, price: Float!): Product
+}
+
+"""Simple product object type"""
+type Product {
+  name: String
+  price: Float
+  isExpensive: Boolean
+}
+
+type Query {
+  hello(name: String!): String
+}

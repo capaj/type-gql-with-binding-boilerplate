@@ -1,0 +1,9 @@
+projects:
+  myapp:
+    schemaPath: schema.graphql
+    extensions:
+      codegen:
+        - generator: graphql-binding
+          language: typescript
+          output:
+            binding: mybinding.ts
